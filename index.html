@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="categorias.css.css"> 
+    <link rel="stylesheet" href="maispopulares.css">
+    <link rel="stylesheet" href="carrossel.css">
+    <link rel="shortcut icon" href="SH.logo.png" alt="Logo do Sushi House">
+
+    <!--TÍTULO DO SITE------------------------------------------------------------------------->
+    <title>Sushi House - As melhores receitas japonesas para você!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+    <body>
+        <!--FAIXA VERMELHA------->
+    <header>
+        <!--CAIXA DE PESQUISA---------------------------------------------------------------->
+        <div class="caixa-de-texto">
+            <input type="text" class="barra-de-pesquisa" placeholder="Clique aqui e pesquise sua receita!">
+            <a href="sobremesas.html" class="botao-pesquisa">
+            <img src="loupe.png" alt="lupa" height="20" width="20">
+            </a>
+        </div>
+
+        <!--ICONES DAS REDES SOCIAIS NO CANTO DIREITO--------------------------------------->
+        <nav>
+            <ul>
+                <a href="https://www.instagram.com/"><img src="instagram.png" alt="Ícone do Instagram, clicando nele vai para o perfil do Sushi House" id="insta" height="80" width="80"></a>
+                <a href="https://www.facebook.com/?locale=pt_BR"><img src="facebook.png" alt="Ícone do Facebook, clicando nele vai para o perfil do Sushi House" id="insta" height="80" width="80"></a>
+                <a href="https://www.tiktok.com/pt-BR/"><img src="tiktok2.png" alt="Ícone do TikTok, clicando nele vai para o perfil do Sushi House" id="insta" height="80" width="80"></a>
+            </ul>
+        </nav>
+
+          <!--LOGO DA SUSHI HOUSE NO CANTO ESQUERDO--------------------------------------->
+        <img src="SushiHouse.logo.png" alt="Logo escrita Sushi House, nome do site de receitas, no canto esquerdo da página" id="img">
+        
+    </header>
+    <!--CARROSSEL DE IMAGENS--------------------------------------->
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+        
+        <!--colocando as imagens----------------------------------->
+        <div class="slide first">
+        <img src="Carrossel-Gif-1.gif" alt="foto contendo comidas japonesas e a logo sushi house" id="imgSlide">
+        </div>
+        <div class="slide">
+        <img src="Carrossel-Gif-2.gif" alt="foto contendo comidas japonesas mostrando que lançam receitas toda semana" id="imgSlide">
+        </div>
+        <div class="slide">
+        <img src="Carrossel-Gif-3.gif" alt="foto mostrando o site possui um novo aplicativo onde pode compartilhar suas receitas com outros"  id="imgSlide">
+        </div>
+       
+          <!--carrossel automatico----------------------------------->
+     
+         <!--carrossel manual----------------------------------->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"> </label>
+            <label for="radio2" class="manual-btn"> </label>
+            <label for="radio3" class="manual-btn"> </label>
+           
+        </div>
+    </div>
+       
+    </div>
+    <!--PARTE DAS GATEGORIAS---------------------------------------------------------------->
+
+    <!--botões para aumentar e diminuir----------------------------------------------------------->
+    <div class="wrapper">
+        <div class="bts">
+            <button onclick="FontSize ('increase')" id="aumentar-fonte"><strong>Aumentar Fonte</strong></button>
+                <button onclick="FontSize('decrease')" id="diminuir-fonte"><strong>Diminuir Fonte</strong></button>
+        </div>
+    </div>     
+
+    <!--titulo das categorias------------------------------------------------------------->
+    <center><h2 id="categorias">CATEGORIAS </h2></center>
+    <center><h2 id="linha"> ________</h2></center>
+   
+    </div>
+    <!--circulo 1: pratos principais------------------------------------------------>
+    <div class="categoriaUm">
+    <div class="circuloUm"></div>
+    <div class="conteudoUm">
+          <h2>Pratos Principais</h2>
+          <p>Aqui temos as melhores receitas de pratos japoneses: Sushi, Sashimi, Tempurá, Guioza, e muito mais!</p>
+          <a href="sobremesas.html">Clique aqui</a>
+        </div>
+        <img src="fotocategoria1.png" alt="Na 1° Categoria possui uma imagem de pratos principais japoneses" />
+      </div>
+    
+       <!--circulo 2: sobremesas------------------------------------------------>
+        <div class="categoriaDois">
+          <div class="circuloDois"></div>
+          <div class="conteudoDois">
+    
+            <h2>Sobremesas</h2>
+            <p>Aqui temos as mais saborosas receitas de sobremesas japonesas: Manju, Anko, Daifuku, Parfait, e muito mais!</p>
+            <a href="sobremesas.html">Confira aqui!</a>
+          </div>
+          <img src="fotocategoria2.png" alt="Na 2° categoria possui uma imagem de sobremesa japonesa" id="img2" />
+      </div>
+    
+       <!--circulo 3: drinks ---------------------------------------------------->
+      <div class="categoriaTres">
+        <div class="circuloTres"></div>
+        <div class="conteudoTres">
+    
+          <h2> Drinks</h2>
+          <p>Aqui temos os mais refrescantes drinks japoneses:  Hokkaido, Matcha Gin, Mojito de saquê,  e muito mais!
+          <a href="sobremesas.html">Confira aqui!</a>
+        </div>
+        <img src="fotocategoria33.png" alt="Na 3° Categoria possui uma imagem de um drink japonês" id="img2" />
+    </div>
+
+    <!--MAIS POPULARES----------------------------------------------->
+
+  
+    <div class="minha-div">
+         <!--botões para aumentar e diminuir----------------------------------------------------------->
+    <div class="wrapper">
+        <div class="bts2">
+            <button onclick="FontSize ('increase')" id="aumentar-fonte"><strong>Aumentar Fonte</strong></button>
+                <button onclick="FontSize('decrease')" id="diminuir-fonte"><strong>Diminuir Fonte</strong></button>
+        </div>
+    </div>   
+
+  <!--título dos mais populares------------------------------------------------->
+    <center><h2 id="mais-populares"> MAIS POPULARES </h2></center>
+    <center><h2 id="linha"> ___________ </h2></center>
+    
+    <!--1 receita: mochi------------------------------------------------>
+    <div class="card-container">
+      <div class="card">
+          <a href="mochi.html"><img src="mochi.png" alt="mochi rechado de morango"></a>
+          <div class="card-content">
+          <h3> Mochi Recheado</h3>
+          <p> É uma iguaria japonesa que combina mochi, uma massa de arroz glutinoso, com morangos frescos, 
+            oferecendo uma deliciosa mistura de texturas e sabores. </p>
+          <a href="mochi.html" class="btn"><strong>Confirir receita!</strong></a>
+                  
+          </div>
+      </div>
+
+      <!--2 receita: salada------------------------------------------------>
+      <div class="card">
+          <img src="saladacommolho.png" alt="foto mostrando salada de acelga">
+          <div class="card-content">
+              <h3>Salada de acelga</h3>
+              <p> É uma preparação que destaca a simplicidade e autenticidade da culinária japonesa, realçando o sabor da acelga por meio de técnicas de conserva.</p>
+                   <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                  
+          </div>
+      </div>
+
+        <!--3 receita: sashimi------------------------------------------------>
+      <div class="card">
+          <img src="sashimi.png" alt="foto mostrando um sashimi de salmão">
+          <div class="card-content">
+              <h3> Sashimi de Salmão</h3>
+              <p>  É uma expressão de simplicidade e na sua qualidade, onde o salmão cru é meticulosamente fatiado para realçar sua textura e sabor excepcionais. </p>
+                   <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                  
+          </div>
+      </div>
+   </div>
+     <!--4 receita: onigri------------------------------------------------>
+   <div class="card-container">
+    <div class="card">
+        <img src="onigri.png" alt="foto mostrando um bolinho de arroz">
+        <div class="card-content">
+            <h3>Onigri (Bolinho de Arroz)</h3>
+            <p> Esse receita é uma deliciosa e prática iguaria que combina arroz glutinoso com uma variedade de recheios, 
+                envoltos em folhas de alga nori. É uma das mais populares. </p>
+                 <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                
+        </div>
+    </div>
+
+      <!--5 receita: Taiyaki------------------------------------------------>
+    <div class="card">
+        <img src="taiyaki.png" alt="foto mostrando doces recheados que possuem formato de peixe">
+        <div class="card-content">
+            <h3>Taiyaki de Chocolate</h3>
+            <p> Taiyaki é uma sobremesa japonesa deliciosa que se destaca pela sua forma única e recheios saborosos. 
+                Esses peixinhos são um ícone e mais populares do Japão. </p>
+                 <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                
+        </div>
+    </div>
+
+      <!--6 receita: Taiyali------------------------------------------------>
+    <div class="card">
+        <img src="drinkverao.png" alt="foto mostrando um drink de verão amarelo japonês">
+        <div class="card-content">
+            <h3> Drink de Verão</h3>
+            <p> São refrescantes e únicos, combinando técnicas artesanais e ingredientes frescos para combater o calor 
+                enquanto cativam os paladares com os seus sabores distintos</p>
+                 <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                
+        </div>
+    </div>
+ </div>
+  </div>
+    </div>
+
+    <!--PARTE SOBRE SUSHI HOUSE------------------------------------------------>
+    <div class="sobrenos">
+            <div class="about-container">
+            <div class="image-container">
+            <video controls width="700" height="450" autoplay loop>
+             <source src="apresentando.mp4" type="video/mp4">
+            <track kind="subtitles" srclang="pt-BR" label="pt-BR" src="legendas.vtt" default></track>
+                    </div>
+            <div class="text-container">
+                <section class="playlist">
+            <h1>SOBRE A <br> <strong>SUSHI HOUSE</strong></h1>
+            Clique aqui para ouvir: 
+                        <p>  
+             <section class="playlist">
+                <audio controls>
+                    <source src="Media_Download_2023-09-09_02_01_12(MP3_160K).mp3" type="audio/mpeg">
+                
+                </audio>
+             </section>
+        </div>
+    </div>
+    
+    <!--ULTIMA PARTE GRAÇAS A DEUS-------------------------->
+    <footer>
+        <div class="footer-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.355011696682!2d-48.044865125604055!3d-23.627453964021853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c5cba99a9f4e91%3A0xc97bceb3a2e1cc0d!2sEtec%20Darcy%20Pereira%20de%20Moraes!5e0!3m2!1spt-BR!2sbr!4v1694219727338!5m2!1spt-BR!2sbr" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe> 
+          
+            <div class="footer-logo">
+                <img src="SushiHouse.logo.png" alt="Logo da empresa">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Tiktok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-info">
+            &copy; Feito por: Julia Santos e Kauane Vieira.
+        </div>
+    </footer>
+</body>
+
+<!--SCRIPIT DO BOTÃO AUMENTAR E DIMINUIR----------------------------------->
+<script>
+    function FontSize(type) {
+        var selectors = ["h4", "p", "h2", ".categorias", ".linha", ".classe1", ".classe2", "h3"];
+
+        selectors.forEach(selector => {
+            var elementos = document.querySelectorAll(selector);
+
+            elementos.forEach(elemento => {
+                var size = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+                size = parseFloat(size);
+
+                if (type === 'increase') {
+                    elemento.style.fontSize = (size + 5) + "px";
+                } else {
+                    elemento.style.fontSize = (size - 5) + "px";
+                }
+            });
+        });
+    }
+</script>
+</script>
+</html>

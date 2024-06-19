@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SH.logo.png" alt="Logo - Sushi House">
+    <link rel="stylesheet" href="mochi.css">
+    <title>Mochi Recheado</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="background-container">
+            <div class="bg-1"></div>
+            <div class="bg-2"></div>
+     </div>
+
+        <div class="about-container">
+            <div class="image-container">
+                <video width="50" height="0" controls autoplay loop>
+                <source src="mochiVide2o.mp4" type="video/mp4">
+                <track kind="subtitles" srclang="pt-BR" label="pt-BR" src="legendas.mochi.vtt" default></track>
+                </div>
+
+            <div class="text-container">
+
+                <div class="wrapper">
+                    <div class="texto">
+                    </div>
+                </div>
+           
+               
+                <h1>Mochi Recheado de Morango</h1>
+                <p>  
+                <strong> Ingredientes:</strong> Mochiko, açúcar, água, morangos, anko (opcional), amido de milho ou fécula de batata. <br>
+                <br>
+
+                  <strong> Instruções: <br> </strong>
+                    <br>
+
+                <strong>1-</strong> Prepare morangos, opcionalmente envolvendo-os em anko. <br>
+                <strong>2-</strong> Misture mochiko e açúcar, adicione água e cozinhe no micro-ondas até ficar elástico. <br>
+                <strong>3-</strong> Divida a massa em círculos, coloque os morangos e dobre o mochi ao redor. <br>
+                <strong>4-</strong> amido de milho, decore com hortelã (opcional) e sirva. <br>
+
+                <br>
+                <br>
+                
+                <strong>Aproveite esta deliciosa sobremesa japonesa de Mochi recheado de morango! <br></strong>
+                </p>
+
+                <a href="index.html"><strong>Retornar</strong></a><br>
+                <div class="wrapper">
+                    <div class="bts">
+                        <button onclick="FontSize ('increase')" id="aumentar-fonte"><strong>Aumentar Fonte</strong></button>
+                            <button onclick="FontSize('decrease')" id="diminuir-fonte"><strong>Diminuir Fonte</strong></button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function FontSize(type) {
+        var selectors = ["h4", "p", "h2", ".categorias", ".linha", ".classe1", ".classe2", "h3"];
+
+        selectors.forEach(selector => {
+            var elementos = document.querySelectorAll(selector);
+
+            elementos.forEach(elemento => {
+                var size = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+                size = parseFloat(size);
+
+                if (type === 'increase') {
+                    elemento.style.fontSize = (size + 5) + "px";
+                } else {
+                    elemento.style.fontSize = (size - 5) + "px";
+                }
+            });
+        });
+    }
+    </script>
+</html>

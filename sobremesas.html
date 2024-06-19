@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SH.logo.png" alt="Logo - Sushi House">
+    <title>Sobremesas</title>
+    <link rel="stylesheet" href="pratos.css">
+</head>
+<body>
+    <header>
+        <img src="SushiHouse.logo.png" alt="Logo escrita Sushi House, nome do site de receitas" id="img">
+    </header>
+    <div class="wrapper">
+        <div class="bts">
+            <button onclick="FontSize ('increase')" id="aumentar-fonte"><strong>Aumentar Fonte</strong></button>
+                <button onclick="FontSize('decrease')" id="diminuir-fonte"><strong>Diminuir Fonte</strong></button>
+        </div>
+
+    <center><h2 id="categorias">SOBREMESAS</h2></center>
+    <center><h2 id="linha"> __________</h2></center>
+
+     <!--1 receita: mochi------------------------------------------------>
+     <div class="card-container">
+        <div class="card">
+            <img src="mochi.png" alt="mochi rechado de morango">
+            <div class="card-content">
+            <h3> Mochi Recheado</h3>
+            <p> É uma iguaria japonesa que combina mochi, uma massa de arroz glutinoso, com morangos frescos, 
+              oferecendo uma deliciosa mistura de texturas e sabores. </p>
+            <a href="mochi.html" class="btn"><strong>Confirir receita!</strong></a>
+                    
+            </div>
+        </div>
+  
+        <!--2 receita: salada------------------------------------------------>
+        <div class="card">
+            <img src="taiyaki.png" alt="foto mostrando doces recheados que possuem formato de peixe">
+            <div class="card-content">
+                <h3>Taiyaki de Chocolate</h3>
+                <p> Taiyaki é uma sobremesa japonesa deliciosa que se destaca pela sua forma única e recheios saborosos. 
+                    Esses peixinhos são um ícone do Japão. </p>
+                     <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                    
+            </div>
+        </div>
+    
+  
+          <!--3 receita: sashimi------------------------------------------------>
+        <div class="card">
+            <img src="parfait.png" alt="foto mostrando uma taça contendo parfait">
+            <div class="card-content">
+                <h3> Parfait de Morango</h3>
+                <p>  Combina camadas de sorvete, frutas, bolos e outros ingredientes em um copo alto, sendo conhecida pela sua apresentação meticulosa e sabor delicioso.</p>
+                     <a href="" class="btn"><strong>Confirir receita!</strong></a>
+                    
+            </div>
+        </div>
+     </div>
+      
+   </div>
+    </div>
+      </div>
+     
+</body>
+<script>
+    function FontSize(type) {
+        var selectors = ["h4", "p", "h2", ".categorias", ".linha", ".classe1", ".classe2", "h3"];
+
+        selectors.forEach(selector => {
+            var elementos = document.querySelectorAll(selector);
+
+            elementos.forEach(elemento => {
+                var size = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+                size = parseFloat(size);
+
+                if (type === 'increase') {
+                    elemento.style.fontSize = (size + 5) + "px";
+                } else {
+                    elemento.style.fontSize = (size - 5) + "px";
+                }
+            });
+        });
+    }
+    </script>
+</html>
